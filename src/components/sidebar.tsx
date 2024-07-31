@@ -32,7 +32,7 @@ const Sidebar = () => {
   // Definisikan menu dengan properti path untuk masing-masing halaman
   const Menus: Menu[] = [
     { title: "Dashboard", src: <IconViewDashboardEditOutline className="w-6 h-6" />, path: "/home" }, 
-    { title: "Pegawai", src: <IconPersonLinesFill className='w-6 h-6'/>, path: "/employee" },
+    { title: "Pegawai", src: <IconPersonLinesFill className='w-6 h-6'/> },
     { title: "Rekap Laporan", src: <IconFileDocument className="w-6 h-6" />, path: "/rekap" }, 
     { title: "Daftar Kantor", src: <IconOfficeBuildingMarkerOutline className="w-6 h-6" />, path: "/kantor" }, 
   ];
@@ -87,13 +87,13 @@ const Sidebar = () => {
                 <ul className={`transition-max-height duration-300 ease-in-out overflow-hidden ${isDropdownOpen ? 'max-h-40' : 'max-h-0'}`}>
                   <li className={`flex items-center rounded-md p-2 pl-8 cursor-pointer hover:bg-blue-50 text-sm`}>
                     <IconFingerprintLine className='w-4 h-4 mr-2 '/>
-                    <Link to="/employee/absen" className="flex items-center text-gray-600">
+                    <Link to="/employee/absensi-pegawai" className="flex items-center text-gray-600">
                       Absensi Pegawai
                     </Link>
                   </li>
                   <li className={`flex items-center rounded-md p-2 pl-8 cursor-pointer hover:bg-blue-50 text-sm`}>
                     <IconFileDocumentEditOutline className='w-4 h-4 mr-2'/>
-                    <Link to="/employee/izin" className="flex items-center text-gray-600">
+                    <Link to="/employee/izin-pegawai" className="flex items-center text-gray-600">
                       Izin Pegawai
                     </Link>
                   </li>

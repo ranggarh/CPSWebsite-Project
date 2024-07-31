@@ -6,7 +6,7 @@ ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 const BarChart = () => {
   const data = {
-    labels: ['Jakarta', 'Bandung', 'Surabaya', 'Medan', 'Bali'],
+    labels: ['Centralindo Pancasakti', 'STO Karang Pilang', 'STO Bambe', 'STO Kandangan', 'STO Kebalen'],
     datasets: [
       {
         label: 'Jumlah Karyawan Absen',
